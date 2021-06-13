@@ -1,34 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fs8-Ow-Oly">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jex-tr-mo8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Tw2-4A-QPg">
             <objects>
-                <viewController id="fs8-Ow-Oly" sceneMemberID="viewController">
+                <viewController id="fs8-Ow-Oly" customClass="HomeViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="khN-3g-NMw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ox8-dz-u1H">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tNv-Qf-zV9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fs8-Ow-Oly" id="OQM-Jz-QDP"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZuJ-zd-qk6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZuJ-zd-qk6" firstAttribute="trailing" secondItem="ox8-dz-u1H" secondAttribute="trailing" id="ZL4-oe-nEI"/>
+                            <constraint firstItem="ZuJ-zd-qk6" firstAttribute="bottom" secondItem="ox8-dz-u1H" secondAttribute="bottom" id="dQT-zJ-KxW"/>
+                            <constraint firstItem="ox8-dz-u1H" firstAttribute="top" secondItem="ZuJ-zd-qk6" secondAttribute="top" id="rE2-vq-dkg"/>
+                            <constraint firstItem="ox8-dz-u1H" firstAttribute="leading" secondItem="ZuJ-zd-qk6" secondAttribute="leading" id="yZv-ks-aNJ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="butHomeNaviN" selectedImage="butHomeNaviS" id="Go2-OR-po9"/>
+                    <navigationItem key="navigationItem" id="j4N-73-st2">
+                        <rightBarButtonItems>
+                            <barButtonItem image="icoAlarmGnbNew" id="2lc-6g-XQi"/>
+                            <barButtonItem image="icoItemGnbNormal" id="6FN-1x-lUQ"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="ox8-dz-u1H" id="i90-SX-wi3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIa-Th-AqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-264" y="950"/>
+            <point key="canvasLocation" x="644.92753623188412" y="949.55357142857133"/>
+        </scene>
+        <!--Custom Back Button Nav Controller-->
+        <scene sceneID="Nit-bI-Oym">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jex-tr-mo8" customClass="CustomBackButtonNavController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="butHomeNaviN" selectedImage="butHomeNaviS" id="Go2-OR-po9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I2J-9u-uOS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fs8-Ow-Oly" kind="relationship" relationship="rootViewController" id="pAd-Dk-hZZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHu-zG-jpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.21739130434787" y="949.55357142857133"/>
         </scene>
     </scenes>
     <resources>
         <image name="butHomeNaviN" width="28" height="28"/>
         <image name="butHomeNaviS" width="28" height="28"/>
+        <image name="icoAlarmGnbNew" width="24" height="24"/>
+        <image name="icoItemGnbNormal" width="20" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
