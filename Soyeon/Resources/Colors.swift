@@ -26,4 +26,11 @@ extension Colors {
         
         return color
     }
+
+    func cgColor() -> CGColor {
+        guard let color = UIColor(named: self.rawValue)?.cgColor
+        else { return UIColor.white.cgColor }
+
+        return color
+    }
 }

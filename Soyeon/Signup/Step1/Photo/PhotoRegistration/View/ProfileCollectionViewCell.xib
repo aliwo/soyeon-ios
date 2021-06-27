@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProfileCollectionViewCell" reuseIdentifier="ProfileCollectionViewCell" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="Soyeon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhC-P5-hXc">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoPlusimgSignup" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-Uy-d52">
+                                <rect key="frame" x="34.5" y="34.5" width="27" height="27"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaH-E9-FOT">
+                                <rect key="frame" x="24.5" y="33" width="47" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="사진 등록 (필수)">
+                                        <attributes>
+                                            <color key="NSColor" name="949494"/>
+                                            <font key="NSFont" size="12" name="NanumSquareR"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WgG-lM-Dqf">
+                                <rect key="frame" x="4" y="4" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="3hP-F1-QWc"/>
+                                    <constraint firstAttribute="height" constant="88" id="5dw-aD-Xwh"/>
+                                    <constraint firstAttribute="width" secondItem="WgG-lM-Dqf" secondAttribute="height" multiplier="1:1" id="nga-wM-f4u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WgG-lM-Dqf" firstAttribute="top" secondItem="LhC-P5-hXc" secondAttribute="top" constant="4" id="3rh-9L-7AI"/>
+                            <constraint firstItem="kaH-E9-FOT" firstAttribute="centerY" secondItem="LhC-P5-hXc" secondAttribute="centerY" id="7ae-nk-HgF"/>
+                            <constraint firstItem="WgG-lM-Dqf" firstAttribute="leading" secondItem="LhC-P5-hXc" secondAttribute="leading" constant="4" id="8sS-T0-Q3n"/>
+                            <constraint firstAttribute="trailing" secondItem="WgG-lM-Dqf" secondAttribute="trailing" constant="4" id="Gem-zP-c5Y"/>
+                            <constraint firstItem="Nva-Uy-d52" firstAttribute="centerX" secondItem="LhC-P5-hXc" secondAttribute="centerX" id="OvJ-Mk-tjf"/>
+                            <constraint firstAttribute="bottom" secondItem="WgG-lM-Dqf" secondAttribute="bottom" constant="4" id="Xdb-A0-r3L"/>
+                            <constraint firstItem="kaH-E9-FOT" firstAttribute="centerX" secondItem="LhC-P5-hXc" secondAttribute="centerX" id="ezm-jW-Na4"/>
+                            <constraint firstItem="Nva-Uy-d52" firstAttribute="centerY" secondItem="LhC-P5-hXc" secondAttribute="centerY" id="pZU-eE-c7a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LhC-P5-hXc" secondAttribute="bottom" id="Ml0-gh-0IX"/>
+                <constraint firstItem="LhC-P5-hXc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gjQ-7n-ud0"/>
+                <constraint firstItem="LhC-P5-hXc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jUc-rf-iQN"/>
+                <constraint firstAttribute="trailing" secondItem="LhC-P5-hXc" secondAttribute="trailing" id="rD3-Lc-ydI"/>
+            </constraints>
+            <size key="customSize" width="96" height="96"/>
+            <connections>
+                <outlet property="borderView" destination="LhC-P5-hXc" id="O4T-Ph-lke"/>
+                <outlet property="photoImageView" destination="WgG-lM-Dqf" id="hWR-Qy-mtq"/>
+                <outlet property="plusImageView" destination="Nva-Uy-d52" id="mTV-Z2-r3F"/>
+                <outlet property="registerLabel" destination="kaH-E9-FOT" id="NvE-hT-S0A"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icoPlusimgSignup" width="27" height="27"/>
+        <namedColor name="949494">
+            <color red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

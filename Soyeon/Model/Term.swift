@@ -22,9 +22,4 @@ struct Term: Codable {
     let required: Bool
     let symbol: String?
     let title: String
-
-    enum CodingKeys: String, CodingKey {
-        case body, id, symbol, title
-        case required = "required"
-    }
 }

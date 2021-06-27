@@ -11,7 +11,7 @@ import KakaoSDKCommon
 import KakaoSDKAuth
 import KakaoSDKUser
 
-protocol LoginProtocol: class {
+protocol LoginProtocol: AnyObject {
     func settingLogin(_ platform: Login.Platform, url: URL)
     func connect(_ platform: Login.Platform)
     func getUserInfo(_ platform: Login.Platform)

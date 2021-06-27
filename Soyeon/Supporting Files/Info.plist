@@ -75,5 +75,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>프로필 사진을 찍기 위한 카메라 접근 허용을 요청합니다.</string>
 </dict>
 </plist>

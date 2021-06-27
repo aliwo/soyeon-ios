@@ -13,7 +13,7 @@ enum ResponseError: Error {
 enum ServiceError: Int {
     case token = 401
     case notYours = 470
-    case blackList = 480
+    case denyList = 480
 }
 
 extension ServiceError {
@@ -24,7 +24,7 @@ extension ServiceError {
             return "인증 토큰 오류"
         case .notYours:
             return "타인의 리소스에 접근함"
-        case .blackList:
+        case .denyList:
             return "정지된 계정"
         }
     }

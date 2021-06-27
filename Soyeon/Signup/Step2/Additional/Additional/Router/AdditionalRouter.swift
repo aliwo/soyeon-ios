@@ -34,7 +34,7 @@ extension AdditionalRouter: AdditionalRouterProtocol {
     // MARK: - Navigation
 
     func navigateToMatching() { // destination 추후 변경
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let storyboard = UIStoryboard(name: "Additional", bundle: .main)
         if let destinationVC = storyboard
             .instantiateViewController(withIdentifier: "AdditionalViewController") as? AdditionalViewController {
             viewController?.navigationController?.pushViewController(destinationVC, animated: true)

@@ -39,7 +39,6 @@ enum Soyeon {
 
 }
 
-
 extension Soyeon: TargetType {
     public var baseURL: URL { return URL(string: "")! }
     public var path: String {

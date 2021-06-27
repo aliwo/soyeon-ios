@@ -12,7 +12,7 @@ protocol AdditionalPresenterInput: AdditionalInteractorOutput {
 
 }
 
-protocol AdditionalPresenterOutput: class {
+protocol AdditionalPresenterOutput: AnyObject {
 
     func displayAdditionalTableView(viewModel: AdditionalMatch.AdditionalViewModel)
 }

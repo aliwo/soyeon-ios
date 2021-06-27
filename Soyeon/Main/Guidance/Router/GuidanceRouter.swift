@@ -32,7 +32,7 @@ extension GuidanceRouter: GuidanceRouterProtocol {
     // MARK: - Navigation
 
     func navigateToGuidance() { // destination 추후 변경
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let storyboard = UIStoryboard(name: "Guidance", bundle: .main)
         if let destinationVC = storyboard
             .instantiateViewController(withIdentifier: "GuidanceViewController") as? GuidanceViewController {
             viewController?.navigationController?.pushViewController(destinationVC, animated: true)
