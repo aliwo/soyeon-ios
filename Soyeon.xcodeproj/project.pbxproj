@@ -148,9 +148,13 @@
 		1DD0CCBC261A11F1003E6347 /* SoyeonUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0CCBB261A11F1003E6347 /* SoyeonUserDefault.swift */; };
 		1DD9CA3325F47F9B00290014 /* PlaceHolderWarningTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
+		D801C6502687230100F5A054 /* MatchSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801C64F2687230100F5A054 /* MatchSectionFooterView.swift */; };
 		D804DCA92635CD820073104B /* WriteIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804DCA82635CD820073104B /* WriteIntroductionViewController.swift */; };
+		D80560E62675C51500832C0D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80560E52675C51500832C0D /* Profile.swift */; };
+		D80560F02678DC5C00832C0D /* MatchSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80560EF2678DC5C00832C0D /* MatchSectionHeaderView.swift */; };
 		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
 		D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC17625D5016B0053C31A /* PhaseViewController.swift */; };
+		D8332488265D38BD00D338BE /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8332487265D38BD00D338BE /* ProfileCell.swift */; };
 		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
 		D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */; };
 		D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6C25B4346200C9C531 /* NewAccountViewController.swift */; };
@@ -177,6 +181,7 @@
 		D8A7221D26568B4F008C388D /* Estimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A7221C26568B4F008C388D /* Estimation.storyboard */; };
 		D8A7222126568B80008C388D /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A7222026568B80008C388D /* Match.storyboard */; };
 		D8A7222526568B96008C388D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A7222426568B96008C388D /* Profile.storyboard */; };
+		D8A722332656A093008C388D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A722322656A093008C388D /* HomeViewController.swift */; };
 		D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */; };
 		D8F11805262B3ABF00E34C97 /* TagListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F11804262B3ABF00E34C97 /* TagListLayout.swift */; };
 /* End PBXBuildFile section */
@@ -333,9 +338,13 @@
 		1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderWarningTextView.swift; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
+		D801C64F2687230100F5A054 /* MatchSectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSectionFooterView.swift; sourceTree = "<group>"; };
 		D804DCA82635CD820073104B /* WriteIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteIntroductionViewController.swift; sourceTree = "<group>"; };
+		D80560E52675C51500832C0D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D80560EF2678DC5C00832C0D /* MatchSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSectionHeaderView.swift; sourceTree = "<group>"; };
 		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
 		D80DC17625D5016B0053C31A /* PhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseViewController.swift; sourceTree = "<group>"; };
+		D8332487265D38BD00D338BE /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
 		D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountPresenter.swift; sourceTree = "<group>"; };
 		D8354D6C25B4346200C9C531 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
@@ -363,6 +372,7 @@
 		D8A7221C26568B4F008C388D /* Estimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Estimation.storyboard; sourceTree = "<group>"; };
 		D8A7222026568B80008C388D /* Match.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Match.storyboard; sourceTree = "<group>"; };
 		D8A7222426568B96008C388D /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D8A722322656A093008C388D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroup.swift; sourceTree = "<group>"; };
 		D8F11804262B3ABF00E34C97 /* TagListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1381,7 +1391,12 @@
 		D8A721FC2653DE79008C388D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D8A722322656A093008C388D /* HomeViewController.swift */,
 				D8A7220E2653E07C008C388D /* Home.storyboard */,
+				D80560E52675C51500832C0D /* Profile.swift */,
+				D8332487265D38BD00D338BE /* ProfileCell.swift */,
+				D80560EF2678DC5C00832C0D /* MatchSectionHeaderView.swift */,
+				D801C64F2687230100F5A054 /* MatchSectionFooterView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1593,6 +1608,7 @@
 				D8569C2925D4701000542872 /* Soyeon.swift in Sources */,
 				0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */,
 				D875578D25C6C20300380F1E /* RadioButton.swift in Sources */,
+				D8332488265D38BD00D338BE /* ProfileCell.swift in Sources */,
 				009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */,
 				000CEB4525B484A800F64A28 /* GuidanceConfigurator.swift in Sources */,
 				D83760DF262F0CE6002FA23B /* PersonalityType.swift in Sources */,
@@ -1619,6 +1635,7 @@
 				009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */,
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
 				0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */,
+				D80560E62675C51500832C0D /* Profile.swift in Sources */,
 				0AC21E0F2613FDE400AD0635 /* AdditionalViewController.swift in Sources */,
 				0AC5F4F32646E25200D9C1D3 /* Step2.swift in Sources */,
 				1D47F47B263178C900E85B94 /* SignupStepViewController.swift in Sources */,
@@ -1671,6 +1688,7 @@
 				0AC21E142613FDE400AD0635 /* AdditionalWorker.swift in Sources */,
 				0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				D801C6502687230100F5A054 /* MatchSectionFooterView.swift in Sources */,
 				00CF093625E28F4E0077700A /* Term.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				1DD9CA3325F47F9B00290014 /* PlaceHolderWarningTextView.swift in Sources */,
@@ -1681,6 +1699,8 @@
 				0A4E513425EA8E8B00616C07 /* WriteProfile1Router.swift in Sources */,
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */,
+				D8A722332656A093008C388D /* HomeViewController.swift in Sources */,
+				D80560F02678DC5C00832C0D /* MatchSectionHeaderView.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0A89E641265DEE990048A3BC /* CheckMyCharacterCollectionHeaderView.swift in Sources */,
 				1D7A12D82645B2FB004D2C0C /* UserDefaultClass.swift in Sources */,
